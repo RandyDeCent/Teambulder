@@ -47,6 +47,7 @@ function appMenu() {
           },
         },
         {
+//           Eamil input
           type: 'input',
           name: 'managerEmail',
           message: "What is the team manager's email?",
@@ -59,6 +60,7 @@ function appMenu() {
           },
         },
         {
+//           office number
           type: 'input',
           name: 'managerOfficeNumber',
           message: "What is the team manager's office number?",
@@ -83,7 +85,7 @@ function appMenu() {
         createTeam();
       });
   }
-
+// team creation
   function createTeam() {
     inquirer
       .prompt([
@@ -111,7 +113,7 @@ function appMenu() {
         }
       });
   }
-
+// adding enfineer
   function addEngineer() {
     inquirer
       .prompt([
@@ -178,7 +180,7 @@ function appMenu() {
         createTeam();
       });
   }
-
+// adding intern
   function addIntern() {
     inquirer
       .prompt([
@@ -245,7 +247,7 @@ function appMenu() {
         createTeam();
       });
   }
-
+// team building 
   function buildTeam() {
     // Create the output directory if the dist path doesn't exist
     if (!fs.existsSync(DIST_DIR)) {
